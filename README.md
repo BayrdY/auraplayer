@@ -29,6 +29,8 @@ AuraPlayer is a proof-of-concept. It does not host any audio files or bypass DRM
 1. Download the latest executable from the Releases page.
 2. Run the installer.
 
+---
+
 ## Main
 ![Main](images/main.png)
 
