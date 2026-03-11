@@ -1,0 +1,29 @@
+{
+  "name": "auraplayer",
+  "version": "1.0.0",
+  "description": "AuraPlayer - Modern Music Experience",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "author": "BayrdY",
+  "build": {
+    "appId": "com.bayrdy.auraplayer",
+    "productName": "AuraPlayer",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png",
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^24.13.3"
+  }
+}
